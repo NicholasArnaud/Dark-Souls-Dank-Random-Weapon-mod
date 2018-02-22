@@ -1,22 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Interop;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using static System.Windows.Application;
 
 
 namespace DarkSoulsIIIRandomWeaponMod
@@ -24,7 +13,7 @@ namespace DarkSoulsIIIRandomWeaponMod
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
 
     public MainWindow()
@@ -46,14 +35,14 @@ namespace DarkSoulsIIIRandomWeaponMod
             [In] int id);
 
         private HwndSource _source;
-        private const int HOTKEY_ID = 9000;
+        private const int HotkeyId = 9000;
 
         protected override void OnSourceInitialized(EventArgs e)
         {
             base.OnSourceInitialized(e);
             var helper = new WindowInteropHelper(this);
             _source = HwndSource.FromHwnd(helper.Handle);
-            _source.AddHook(HwndHook);
+            _source?.AddHook(HwndHook);
             RegisterHotKey();
         }
 
@@ -68,9 +57,9 @@ namespace DarkSoulsIIIRandomWeaponMod
         private void RegisterHotKey()
         {
             var helper = new WindowInteropHelper(this);
-            const uint KEY_X = 0x58;
-            const uint MOD_ALT = 0x0001;
-            if (!RegisterHotKey(helper.Handle, HOTKEY_ID, MOD_ALT, KEY_X))
+            const uint keyX = 0x58;
+            const uint modAlt = 0x0001;
+            if (!RegisterHotKey(helper.Handle, HotkeyId, modAlt, keyX))
             {
                 // handle error
             }
@@ -79,18 +68,18 @@ namespace DarkSoulsIIIRandomWeaponMod
         private void UnregisterHotKey()
         {
             var helper = new WindowInteropHelper(this);
-            UnregisterHotKey(helper.Handle, HOTKEY_ID);
+            UnregisterHotKey(helper.Handle, HotkeyId);
         }
 
         private IntPtr HwndHook(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {
-            const int WM_HOTKEY = 0x0312;
+            const int wmHotkey = 0x0312;
             switch (msg)
             {
-                case WM_HOTKEY:
+                case wmHotkey:
                     switch (wParam.ToInt32())
                     {
-                        case HOTKEY_ID:
+                        case HotkeyId:
                             OnHotKeyPressed();
                             handled = true;
                             break;
@@ -100,163 +89,151 @@ namespace DarkSoulsIIIRandomWeaponMod
             return IntPtr.Zero;
         }
 
-        private void handlemicri()
+        private void Handlemicri()
         {
-            if (whoevenuseswpflul.Run())
-            {
-                // Running
-                Start.Content = "Stop";
-            }
-            else
-            {
-                // Not running
-                Start.Content = "Start";
-            }
+            Start.Content = Whoevenuseswpflul.Run() ? "Stop" : "Start";
         }
 
         private void OnHotKeyPressed()
         {
-            handlemicri();
+            Handlemicri();
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            handlemicri();
+            Handlemicri();
         }
 
-        static public void Fails()
+        public static void Fails()
         {
             // Not running
-            ((MainWindow)Application.Current.MainWindow).Start.Content = "Start";
+            if (Current == null) return;
+            Debug.Assert(Current.MainWindow != null, "Current.MainWindow != null");
+            ((MainWindow) Current.MainWindow).Start.Content = "Start";
         }
 
-        private void sendupdate()
+        private void Sendupdate()
         {
             // Best way to make program, put shit code elsewhere
-            whoevenuseswpflul.Modlist(timer.Text, StandWeap.IsChecked, Bows.IsChecked, Whips.IsChecked, Shields.IsChecked, Heavy_infusions.IsChecked, Sharp_infusions.IsChecked, Refined_infusions.IsChecked, Simple_infusions.IsChecked, Crystal_infusions.IsChecked, Fire_infusions.IsChecked, Chaos_infusions.IsChecked, Lightning_infusions.IsChecked, Deep_infusions.IsChecked, Dark_infusions.IsChecked, Poison_infusions.IsChecked, Blood_infusions.IsChecked, Raw_infusions.IsChecked, Blessed_infusions.IsChecked, Hollow_infusions.IsChecked, Secret.IsChecked);
+            Whoevenuseswpflul.Modlist(Timer.Text, StandWeap.IsChecked, Bows.IsChecked, Whips.IsChecked, Shields.IsChecked, HeavyInfusions.IsChecked, SharpInfusions.IsChecked, RefinedInfusions.IsChecked, SimpleInfusions.IsChecked, CrystalInfusions.IsChecked, FireInfusions.IsChecked, ChaosInfusions.IsChecked, LightningInfusions.IsChecked, DeepInfusions.IsChecked, DarkInfusions.IsChecked, PoisonInfusions.IsChecked, BloodInfusions.IsChecked, RawInfusions.IsChecked, BlessedInfusions.IsChecked, HollowInfusions.IsChecked, Secret.IsChecked);
         }
 
         private void StandWeap_Checked(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void Bows_Checked(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void Shields_Checked(object sender, RoutedEventArgs e)
         {
-            sendupdate();
-        }
-
-        private void ListBoxItem_Selected_1(object sender, RoutedEventArgs e)
-        {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_2(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_3(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_4(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_5(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_6(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_7(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_8(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_9(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_10(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_11(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_12(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_13(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_14(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_15(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void ListBoxItem_Selected_16(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void Closingg(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            whoevenuseswpflul.Stop();
+            Whoevenuseswpflul.Stop();
         }
 
         private void timer_TextChanged(object sender, TextChangedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
         }
 
         private void Secret_Checked(object sender, RoutedEventArgs e)
         {
-            sendupdate();
+            Sendupdate();
             Secret.Content = "Znorq: only thing i find about 'secret' option is 'shouto out to Elajjaz for trying the mod and testing the secret option' so no help there : )";
         }
-        
-        int k = 0;
-        private void testt(object sender, MouseButtonEventArgs e)
+
+        private int _k;
+        private void Testt(object sender, MouseButtonEventArgs e)
         {
-            k += 1;
-            if (k >= 20)
+            _k += 1;
+            if (_k >= 20)
             {
                 Status.Content = "Usable: U bored?";
             }

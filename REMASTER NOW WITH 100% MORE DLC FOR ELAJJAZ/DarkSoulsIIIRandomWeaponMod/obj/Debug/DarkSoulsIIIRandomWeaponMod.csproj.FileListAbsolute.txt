@@ -1,0 +1,13 @@
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\bin\Debug\DarkSoulsIIIRandomWeaponMod.exe.config
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\bin\Debug\DarkSoulsIIIRandomWeaponMod.exe
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\bin\Debug\DarkSoulsIIIRandomWeaponMod.pdb
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\obj\Debug\DarkSoulsIIIRandomWeaponMod.csprojResolveAssemblyReference.cache
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\obj\Debug\MainWindow.baml
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\obj\Debug\MainWindow.g.cs
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\obj\Debug\App.g.cs
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\obj\Debug\DarkSoulsIIIRandomWeaponMod_MarkupCompile.cache
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\obj\Debug\DarkSoulsIIIRandomWeaponMod.g.resources
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\obj\Debug\DarkSoulsIIIRandomWeaponMod.Properties.Resources.resources
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\obj\Debug\DarkSoulsIIIRandomWeaponMod.csproj.GenerateResource.Cache
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\obj\Debug\DarkSoulsIIIRandomWeaponMod.exe
+C:\Users\s178066\Documents\GitHub\Dark-Souls-Dank-Random-Weapon-mod\REMASTER NOW WITH 100% MORE DLC FOR ELAJJAZ\DarkSoulsIIIRandomWeaponMod\obj\Debug\DarkSoulsIIIRandomWeaponMod.pdb

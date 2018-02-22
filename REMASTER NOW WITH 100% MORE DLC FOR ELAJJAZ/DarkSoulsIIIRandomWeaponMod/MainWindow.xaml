@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DarkSoulsIIIRandomWeaponMod"
         mc:Ignorable="d"
         Title="MainWindow" Height="459" Width="517" Closing="Closingg">
     <Grid Background="LightGray">
@@ -44,77 +43,77 @@
                     </ListBoxItem>
                     <ListBoxItem>
                         <CheckBox
-                            x:Name="Heavy_infusions"
+                            x:Name="HeavyInfusions"
                             Content="Heavy infusions" Click="ListBoxItem_Selected_2" />
                     </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Sharp_infusions"
+                        x:Name="SharpInfusions"
                         Content="Sharp infusions" Click="ListBoxItem_Selected_3"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Refined_infusions"
+                        x:Name="RefinedInfusions"
                         Content="Refined infusions" Click="ListBoxItem_Selected_4"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Simple_infusions"
+                        x:Name="SimpleInfusions"
                         Content="Simple infusions" Click="ListBoxItem_Selected_5"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Crystal_infusions"
+                        x:Name="CrystalInfusions"
                         Content="Crystal infusions" Click="ListBoxItem_Selected_6"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Fire_infusions"
+                        x:Name="FireInfusions"
                         Content="Fire infusions" Click="ListBoxItem_Selected_7"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Chaos_infusions"
+                        x:Name="ChaosInfusions"
                         Content="Chaos infusions" Click="ListBoxItem_Selected_8"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Lightning_infusions"
+                        x:Name="LightningInfusions"
                         Content="Lightning infusions" Click="ListBoxItem_Selected_9"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Deep_infusions"
+                        x:Name="DeepInfusions"
                         Content="Deep infusions" Click="ListBoxItem_Selected_10"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Dark_infusions"
+                        x:Name="DarkInfusions"
                         Content="Dark infusions" Click="ListBoxItem_Selected_11"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Poison_infusions"
+                        x:Name="PoisonInfusions"
                         Content="Poison infusions" Click="ListBoxItem_Selected_12"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Blood_infusions"
+                        x:Name="BloodInfusions"
                         Content="Blood infusions" Click="ListBoxItem_Selected_13"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Raw_infusions"
+                        x:Name="RawInfusions"
                         Content="Raw infusions" Click="ListBoxItem_Selected_14"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Blessed_infusions"
+                        x:Name="BlessedInfusions"
                         Content="Blessed infusions" Click="ListBoxItem_Selected_15"/>
                 </ListBoxItem>
                 <ListBoxItem>
                     <CheckBox
-                        x:Name="Hollow_infusions"
+                        x:Name="HollowInfusions"
                         Content="Hollow infusions" Click="ListBoxItem_Selected_16"/>
                 </ListBoxItem>
             </ListBox>
@@ -139,7 +138,7 @@
                 <Label
                     Content="Timer (seconds):" />
                 <TextBox
-                    x:Name="timer"
+                    x:Name="Timer"
                     Grid.Column="1"
                     Text="1"
                     Margin="9,1,9,1" TextChanged="timer_TextChanged" />
@@ -154,7 +153,7 @@
             <Label
                 Grid.Row="3"
                 x:Name="Usable"
-                Content="Usable: " MouseDown="testt" />
+                Content="Usable: " MouseDown="Testt" />
             <Button
                 x:Name="Start"
                 Grid.Row="4"
