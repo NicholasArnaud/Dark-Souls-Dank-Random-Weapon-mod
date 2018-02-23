@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace DarkSoulsIIIRandomWeaponMod
 {
-    class Whoevenuseswpflul
+    internal class Whoevenuseswpflul
     {
         //not really sure
         public const int ProcessVmRead = 0x10;
@@ -46,10 +46,10 @@ namespace DarkSoulsIIIRandomWeaponMod
                 return 2030000;
             }
 
-            bool isbossweapon = false;
+            var isbossweapon = false;
             char[] delimiterChars = { ' ' };
 
-            Random rnd = new Random();
+            var rnd = new Random();
             var r = rnd.Next(weaponlist.Count);
             var cur = weaponlist[r].Split(delimiterChars)[0];
 
